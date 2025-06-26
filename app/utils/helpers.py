@@ -85,9 +85,11 @@ class HealthChecker:
         Returns:
             Health status dictionary
         """
-        from app.services.queue import queue_service
+        from app.services.queue import get_queue_service
         from app.services.prediction import prediction_service
-        
+
+        queue_service = get_queue_service()
+
         return {
             "timestamp": datetime.utcnow().isoformat(),
             "status": "healthy",

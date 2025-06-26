@@ -17,12 +17,15 @@ from app.models import (
     PredictionStatus
 )
 from app.services.prediction import prediction_service
-from app.services.queue import queue_service
+from app.services.queue import get_queue_service
 
 logger = logging.getLogger(__name__)
 
 # Create router with prefix and tags for OpenAPI documentation
 router = APIRouter(prefix="/predict", tags=["predictions"])
+
+# Get the queue service instance
+queue_service = get_queue_service()
 
 
 @router.post(
