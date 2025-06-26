@@ -61,10 +61,13 @@ curl -X 'POST' \
 ### Asynchronous
 **Submit:**
 ```bash
-curl -X POST "http://localhost:8080/predict" \
-  -H "Content-Type: application/json" \
-  -H "Async-Mode: true" \
+curl -X 'POST' \
+  'http://localhost:8080/predict' \
+  -H 'accept: application/json' \
+  -H 'Async-Mode: true' \
+  -H 'Content-Type: application/json' \
   -d '{"input": "Sample input data"}'
+}'
 ```
 
 **Check Result:**
