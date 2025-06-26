@@ -29,6 +29,7 @@ This project simulates a production-ready ML inference platform with the followi
 
 ```bash
 cd SDE_Assessment_Bilal_Shakeel
+(If cloning this git then use: cd app)
 docker-compose up --build
 ```
 
