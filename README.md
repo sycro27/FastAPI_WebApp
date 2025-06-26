@@ -23,7 +23,7 @@ This project simulates a production-ready ML inference platform with the followi
 
 ---
 
-## Quick Start
+## To Run
 
 ### With Docker Compose (Recommended)
 
